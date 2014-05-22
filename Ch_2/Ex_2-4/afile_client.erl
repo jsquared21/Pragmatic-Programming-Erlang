@@ -1,3 +1,7 @@
+%% @author Jabari James <jsquared21@gmail.com>
+%% jsquared, Inc., 2014.
+%% @copyright 2014 by jsquared
+%% @version 0.1
 -module(afile_client).
 -export ([ls/1, get_file/2, put_file/2]).
 
