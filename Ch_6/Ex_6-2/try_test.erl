@@ -1,4 +1,4 @@
-%% @author Jabari James <jsquared21@gmail.com>
+%% @author Jabari James <jabarimail@gmail.com>
 %% jsquared, Inc., 2014.
 %% @copyright 2014 by jsquared
 %% @version 0.1
