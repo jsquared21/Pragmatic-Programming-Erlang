@@ -1,0 +1,35 @@
+TimeStamp: {1399,841232,57917}.
+Error: {2,caught,thrown,a}.
+
+TimeStamp: {1399,841232,59496}.
+Error: {3,caught,exited,a}.
+
+TimeStamp: {1399,841232,60227}.
+Error: {5,caught,error,a}.
+
+TimeStamp: {1399,841321,655133}.
+Error: {2,caught,thrown,a}.
+
+TimeStamp: {1399,841321,655844}.
+Error: {3,caught,exited,a}.
+
+TimeStamp: {1399,841321,657147}.
+Error: {5,caught,error,a}.
+
+TimeStamp: {1399,841573,31704}.
+Error: {a,[{try_test,generate_execption,1,[{file,"try_test.erl"},{line,8}]},
+           {try_test,demo3,0,[{file,"try_test.erl"},{line,17}]},
+           {erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,661}]},
+           {shell,exprs,7,[{file,"shell.erl"},{line,676}]},
+           {shell,eval_exprs,7,[{file,"shell.erl"},{line,631}]},
+           {shell,eval_loop,3,[{file,"shell.erl"},{line,616}]}]}.
+
+TimeStamp: {1399,841675,269245}.
+Error: {2,caught,thrown,a}.
+
+TimeStamp: {1399,841675,271157}.
+Error: {3,caught,exited,a}.
+
+TimeStamp: {1399,841675,274618}.
+Error: {5,caught,error,a}.
+
