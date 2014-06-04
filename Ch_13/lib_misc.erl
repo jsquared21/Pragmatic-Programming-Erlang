@@ -128,7 +128,7 @@ restart_all(List) ->
 				{'EXIT', _Pid, shutdown} -> % manual termination, not crash
 					ok;
 				{'EXIT', Pid, Reason} ->
-					io:format("~p~p~nI'm the monitor. I will restart all processes~n",
+					io:format("~p~p~nI'm the supervisor. I will restart all processes~n",
 						[Pid, Reason]),
 					restart_all(List)
 		end.	
