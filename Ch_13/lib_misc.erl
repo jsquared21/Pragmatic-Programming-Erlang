@@ -17,18 +17,16 @@ my_spawn(Mod, Func, Args) ->
 			process_flag(trap_exit, true),
 			Pid = spawn_link(Mod, Func, Args),
 			register(Mod, Pid),
-			SpawnTime = time(),
+			statistics(wall_clock),
 			receive
 				{'EXIT', Pid, Reason} ->
-					print_details(Pid, Reason, SpawnTime)
+					print_details(Pid, Reason)
 			end.
 
-print_details(Pid, Reason, SpawnTime) ->
-	{SpawnHr, SpawnMin, SpawnSec} = SpawnTime,
-	{EndHr, EndMin, EndSec} = time(),
-	{Hour, Minute, Second} = {EndHr - SpawnHr, EndMin - SpawnMin, EndSec - SpawnSec},
-	io:format("Process ~p died. Reason:~p. Process lifespan:~p:~p:~p~n",
-		[Pid, Reason, Hour, Minute, Second]).
+print_details(Pid, Reason) ->
+	{_,Time} = statistics(wall_clock),
+	io:format("Process ~p died. Reason:~p. Process lifespan:~p microseconds~n",
+		[Pid, Reason, Time]).
 	
 %% Ex:13-2. 
 %% Solve the previous exercise using the on_exit function shown
